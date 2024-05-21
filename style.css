@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(116, 159, 106);
+}
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2e4f24;
+    z-index: 0;
+opacity: 0.5;
+background-image:  linear-gradient(#1c3c17 1px, transparent 1px), linear-gradient(to right, #134319 1px, #e5e5f7 1px);
+background-size: 20px 20px;
+
+}
+h1 {
+    position: absolute;
+    z-index: 2;
+    
+}
+
+
+/* Book */
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+    
+    
+    
+}
+.espiral {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.estrella {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+    box-shadow: rgba(145, 55, 112, 0.19) 0px 10px 20px, rgba(96, 45, 86, 0.23) 0px 6px 6px;
+    
+
+}
+
+
+
+
+.imagen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.a{
+    position:absolute;
+    padding: 34px;
+    text-align: center;
+    color:rgb(126, 168, 116);
+    transition-duration: 0.5s;
+    transition: all ease;
+}
+.a:hover{
+    color: #e03abf;
+    
+}
+.title{
+    color:#c12cad;
+    
+}
+
+.front,
+.back {
+    background-color: rgb(26, 52, 11);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid rgba(10, 43, 3, 0.848);
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+    z-index: 2;
+    text-shadow: 5px 5px  3px rgba(158, 47, 103, 0.501);
+    transition: all ease;
+    transition-duration: 0.5s;
+    transform: scale(1);
+    
+    
+}
+button:hover {
+    transform: scale(1.2);
+}
+   
+
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #152516;
+}
+
+i {
+    font-size: 50px;
+    color: rgb(38, 98, 38);
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+

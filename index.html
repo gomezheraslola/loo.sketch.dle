@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./magnify.css">
+    <link rel="stylesheet" href="./style2.css">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/311ab31072.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fondo">
+       
+    </div>
+   
+        
+    
+    <!-- Previous Button -->
+    <button id="prev-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+
+    <!-- Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content">
+                    <img src="./vectoriales/estrella.svg" class="estrella">
+                    <h1 class="title">SKETCHBOOK</h1>
+                   
+                        
+                </div>
+            </div>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <p class="a">The objective of this page is to fully display my sketchbook and be able to pick and choose from it.
+                        <br> This is a self-made project, as I would like to sell my illustrations and be open towards comissions. 
+                        <br> The mechanism is simple: <br> You go through my sketchbook (enjoying the awesome animations on the mean time hehe), <br> choose one idea that you like and zoom on it, <br> and then you simply hit the "send" button and I will get a message telling me all i need to know about your request.
+                        
+                         </p>	
+                        
+                </div>
+            </div>
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <h1></h1>
+                    <img src="scan sketchbook proyecto imagen\cuadernohoja3.jpg" alt="sketchbook page" class="zoom imagen">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <h1></h1>
+                    <img src="scan sketchbook proyecto imagen\cuadernohoja10.jpg" alt="sketchbook page" class="imagen">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <h1></h1>
+                    <img src="scan sketchbook proyecto imagen\cuadernohoja2.jpg" alt="sketchbook page" class="imagen" >
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <h1></h1>
+                    <img src="scan sketchbook proyecto imagen\cuadernohoja7.jpg" alt="sketchbook page"  class="imagen">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 4 -->
+        <div id="p4" class="paper">
+            <div class="front">
+                <div id="f4" class="front-content">
+                    <h1></h1>
+                    <img src="scan sketchbook proyecto imagen\cuadernohoja4.jpg" alt="sketchbook page" class="imagen">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b4" class="back-content">
+                    <h1></h1>
+                   <img src="./vectoriales/espiral.svg" class="espiral">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+
+
+    <!-- Next Button -->
+    <button id="next-btn">
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    
+    <script src="jquery.magnify.js" charset="utf-8"></script>
+    <script>
+    $(document).ready(function() {
+      $('.zoom').magnify();
+    });
+    </script>
+
+</body>
+</html>
